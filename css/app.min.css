@@ -1,13 +1,684 @@
+@import url(../css/all.min.css);
 body {
-  background-color: black;
+  background-color: #0e0e0d;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  color: #FAF1E6;
 }
 
-.gogo {
+header {
+  height: 100vh;
+}
+
+nav {
+  position: relative;
+}
+
+.firstPart {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.copyright {
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu ul {
+  padding-left: 0;
+}
+
+.menu ul li {
+  padding-top: 71px;
+  margin-left: 0;
+  list-style-type: none;
+  word-spacing: nowrap;
+}
+
+.menu ul li a {
+  color: #FFF;
+}
+
+.menu ul li a .doubleLine::before {
+  content: '';
+  height: 10px;
+  width: 100%;
+  background-color: #710000;
+  display: inline-block;
+}
+
+.menu ul li a .doubleLine::after {
+  content: '';
+  height: 10px;
+  width: 100%;
+  background-color: #710000;
+  display: inline-block;
+  padding-bottom: -2px;
+}
+
+.poloska {
+  height: 100vh;
+  width: 100%;
+}
+
+.poloska .kartinka {
+  background-color: #710000;
+  height: 100vh;
+  width: 84px;
+}
+
+.main-menu {
+  height: 40px;
+}
+
+.main-menu a {
+  background-color: transparent;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 28px;
+  padding-top: 5px;
+  color: #eae6e6;
+  white-space: nowrap;
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.main-menu a:active {
+  color: #fff;
+  background-color: #fff;
+}
+
+.main-menu a:hover, .main-menu a:focus {
+  text-decoration: none;
+  padding: 10px 23px;
+  color: #000;
+  background-color: #fff;
+}
+
+.label {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1064px;
+  height: 917px;
+}
+
+.label .title {
+  font-family: Raleway, sans-serif;
+  font-size: 159px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #f0f0e0;
+  line-height: 171px;
+  position: absolute;
+  top: 185px;
+  left: 258px;
+  background-color: #000;
+}
+
+.secondPart {
+  height: 100vh;
+}
+
+.col-md-6 {
+  padding-right: 0;
+}
+
+.description {
+  position: relative;
+  height: 55%;
+  background-color: #125A49;
+  line-height: 35px;
+  padding-top: 73px;
+  padding-left: 65px;
+  padding-bottom: 20px;
+}
+
+.description .dogs {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.description img {
+  margin: 15px;
+  width: 190px;
+  height: auto;
+  border: 10px solid #FFFFFF;
+}
+
+.aboutUs {
+  position: relative;
+  height: 45%;
+  padding-left: 65px;
+  padding-top: 12px;
+  background-color: #FAF1E6;
+  color: #125A49;
+  text-align: left;
+}
+
+.tt {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tt .btn {
+  background-color: #710000;
+  color: #FFf;
+  width: 232px;
+  margin-top: 30px;
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  padding: 23px 63px;
+}
+
+.poloska2 {
+  margin-top: 120px;
+  width: 100%;
+  height: 84px;
+}
+
+.poloska2-menu {
+  width: 100%;
+  height: 84px;
+}
+
+.header-menu {
+  position: relative;
+  width: 100%;
+  background-color: #710000;
+  text-align: center;
+  padding-top: 26px;
+}
+
+.big-text {
+  position: relative;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  font-size: 159px;
+  font-weight: 800;
+  line-height: 163px;
+  color: #FAF1E6;
+  height: 100%;
+  padding-right: 0;
+  margin: 0;
+  margin-top: 137px;
+}
+
+.big-text p {
+  margin: 0;
+  padding: 0;
+  line-height: 187px;
+}
+
+.big-text span {
+  font-family: Raleway, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #FAF1E6;
+  text-transform: none;
+}
+
+.big-text .main-office {
+  margin-top: 60px;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: none;
+  border-top: 12px solid #710000;
+  border-bottom: 12px solid #710000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.big-text .address {
   margin-top: 10px;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: none;
+}
+
+.email {
+  margin-top: 71px;
+  background-color: #125A49;
+  padding-top: 37px;
+  padding-bottom: 70px;
+}
+
+.email-title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 50px;
+  color: FAF1E6;
+}
+
+.email-address {
+  margin-top: 85px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: FAF1E6;
+}
+
+.social {
+  margin-top: 238px;
+}
+
+.social a {
+  margin-right: 85px;
+  padding-top: 10px;
+}
+
+.animationemail {
+  position: absolute;
+  background-size: cover;
+  right: 250px;
+  width: 673px;
+  height: 719px;
+}
+
+.poloska-pokolenia {
+  margin-top: 284px;
+  height: 84px;
+}
+
+.big-text-rotate {
+  position: relative;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 163px;
+  color: #FAF1E6;
+  height: 100%;
+  margin: 0;
+  margin-top: 137px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.stage {
+  padding-top: 60px;
+}
+
+.stage p {
+  padding-top: 18px;
+  font-family: Montserrat, sans-serif;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.stage p span {
+  color: #fff;
+}
+
+.stage-rotate {
+  padding-top: 60px;
+}
+
+.stage-rotate p {
+  padding-top: 18px;
+  font-family: Montserrat, sans-serif;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.stage-rotate p span {
+  color: #fff;
+}
+
+.animation2 {
+  text-align: center;
+}
+
+.animation2 img {
+  width: 400px;
+  height: auto;
+}
+
+.animation3 {
+  margin-top: 131px;
+}
+
+.animation3 {
+  text-align: center;
+}
+
+.animation3 img {
+  width: 483px;
+  height: auto;
+}
+
+.rotate {
+  margin-top: 306px;
+  -webkit-transform: rotate(23deg);
+      -ms-transform: rotate(23deg);
+          transform: rotate(23deg);
+}
+
+.redbordertop {
+  border-top: 12px solid #710000;
+}
+
+.stagewithback {
+  background-color: #125A49;
+  padding: 18px 108px;
+  font-family: Montserrat, serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FAF1E6;
+}
+
+.zagolovok {
+  font-family: Raleway, sans-serif;
+  margin-bottom: 17px;
+  font-size: 43px;
+  white-space: nowrap;
+}
+
+.menu-2 {
+  margin-top: 130px;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+  width: 100%;
+}
+
+.menu-2 ul {
+  padding-left: 0;
+}
+
+.menu-2 ul li:first-child {
+  border-top: 12px solid #710000;
+}
+
+.menu-2 ul li {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  list-style-type: none;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 39px;
+  border-bottom: 12px solid #710000;
+}
+
+.menu-2 ul li span {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 28px;
+  color: #FAF1E6;
+}
+
+.menu-2 a {
+  color: #FFF;
+}
+
+.other_offers {
+  margin-top: 51px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: Montserrat, sans-serif;
+  font-size: 43px;
+  font-weight: 200;
+  line-height: 52px;
+}
+
+.other_offers span {
+  font-weight: 800;
+}
+
+.foot {
+  padding-top: 20px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFF;
+  margin-top: 282px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  background-color: #710000;
+  text-align: center;
+}
+
+.foot .logo {
+  text-transform: uppercase;
+  border: 1px solid #FAF1E6;
+  padding: 10px 27px;
+  white-space: nowrap;
+}
+
+.foot a {
+  color: #FFF;
+}
+
+.mt {
+  margin-top: 35px;
+}
+
+.footer_button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 15px;
+}
+
+.footer_button .btn {
+  width: 264px;
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  padding: 20px 30px;
+  background-color: #fff;
   color: #000;
 }
 
-.gogo:hover {
-  color: red;
+.text-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.strela {
+  display: inline-block;
+  text-align: right;
+}
+
+.strela .fas {
+  color: #fff;
+  font-size: 40px;
+}
+
+.makeOrder {
+  font-family: Raleway, sans-serif;
+  text-transform: none;
+  margin-top: 204px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FAF1E6;
+}
+
+.makeOrder input {
+  display: block;
+  width: 100%;
+  height: 59px;
+  border-radius: 20px;
+  background: #FAF1E6;
+  margin-bottom: 90px;
+  padding: 12px 20px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+}
+
+.makeOrder button {
+  margin-top: 73px;
+  padding: 11px 75px;
+  border-radius: 20px;
+  background-color: #FAF1E6;
+  border: none;
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  white-space: nowrap;
+  outline: none;
+}
+
+.makeOrder button:hover {
+  background-color: #FFF;
+}
+
+.makeOrder textarea {
+  background: #FAF1E6;
+  width: 100%;
+  height: 176px;
+}
+
+.makeOrder span {
+  font-size: 24px;
+  line-height: 28px;
+  color: #8d8d8c;
+}
+
+.portfolio_title img {
+  width: 865px;
+  height: 791px;
+}
+
+.portfolio_title .title {
+  font-family: Raleway, sans-serif;
+  font-size: 159px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #f0f0e0;
+  line-height: 171px;
+  position: absolute;
+  top: 175px;
+  right: -550px;
+  background-color: #000;
+}
+
+.portfoliopoloska {
+  margin-top: 120px;
+  width: 100%;
+  height: 65px;
+}
+
+/* Wide screen */
+@media only screen and (max-width: 1644px) {
+  /**/
+}
+
+@media only screen and (max-width: 1309px) {
+  .logo {
+    font-size: 16px;
+  }
+  .animationemail {
+    top: 400px;
+    right: 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .animationemail {
+    display: none;
+  }
+}
+
+/* Meduim devices, desktop */
+@media only screen and (max-width: 992px) {
+  .email-address {
+    font-size: 25px;
+  }
+}
+
+/* Small devises, Tablets */
+@media only screen and (max-width: 768px) {
+  /* */
+}
+
+/* Phones*/
+@media only screen and (max-width: 480px) {
+  .social {
+    margin-top: 50px;
+  }
+}
+
+/* Small phones */
+@media only screen and (max-width: 320px) {
+  .aboutUs {
+    text-align: center;
+  }
 }
