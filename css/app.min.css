@@ -1,7 +1,13 @@
 @import url(../css/all.min.css);
-body {
+html, body {
+  height: 100%;
   background-color: #0e0e0d;
-  font-family: Montserrat, sans-serif;
+}
+
+body {
+  opacity: 1;
+  background-color: #0e0e0d;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 27px;
@@ -16,31 +22,12 @@ nav {
   position: relative;
 }
 
-.firstPart {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
 .copyright {
   margin-top: 50px;
-  margin-bottom: 90px;
 }
 
 .menu {
-  position: relative;
+  margin-top: 200px;
 }
 
 .menu ul {
@@ -51,27 +38,32 @@ nav {
   padding-top: 71px;
   margin-left: 0;
   list-style-type: none;
-  word-spacing: nowrap;
+  white-space: nowrap;
 }
 
 .menu ul li a {
   color: #FFF;
+  font-size: 33px;
 }
 
-.menu ul li a .doubleLine::before {
+.menu ul .doubleLine::before, .menu ul .doubleLine::after {
+  margin: 10px 0px;
+}
+
+.menu ul .doubleLine::before {
   content: '';
   height: 10px;
   width: 100%;
   background-color: #710000;
-  display: inline-block;
+  display: block;
 }
 
-.menu ul li a .doubleLine::after {
+.menu ul .doubleLine::after {
   content: '';
   height: 10px;
   width: 100%;
   background-color: #710000;
-  display: inline-block;
+  display: block;
   padding-bottom: -2px;
 }
 
@@ -82,7 +74,6 @@ nav {
 
 .poloska .kartinka {
   background-color: #710000;
-  height: 100vh;
   width: 84px;
 }
 
@@ -92,12 +83,12 @@ nav {
 
 .main-menu a {
   background-color: transparent;
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
   line-height: 28px;
-  padding-top: 5px;
+  padding: 10px 50px;
   color: #eae6e6;
   white-space: nowrap;
   -webkit-transition: color 0.5s ease;
@@ -112,7 +103,6 @@ nav {
 
 .main-menu a:hover, .main-menu a:focus {
   text-decoration: none;
-  padding: 10px 23px;
   color: #000;
   background-color: #fff;
 }
@@ -127,7 +117,7 @@ nav {
 }
 
 .label .title {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 159px;
   font-weight: 800;
   text-transform: uppercase;
@@ -136,20 +126,10 @@ nav {
   position: absolute;
   top: 185px;
   left: 258px;
-  background-color: #000;
-}
-
-.secondPart {
-  height: 100vh;
-}
-
-.col-md-6 {
-  padding-right: 0;
+  background-color: #0e0e0d;
 }
 
 .description {
-  position: relative;
-  height: 55%;
   background-color: #125A49;
   line-height: 35px;
   padding-top: 73px;
@@ -170,7 +150,6 @@ nav {
 }
 
 .aboutUs {
-  position: relative;
   height: 45%;
   padding-left: 65px;
   padding-top: 12px;
@@ -179,22 +158,12 @@ nav {
   text-align: left;
 }
 
-.tt {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .tt .btn {
   background-color: #710000;
   color: #FFf;
   width: 232px;
   margin-top: 30px;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 22px;
   padding: 23px 63px;
 }
@@ -219,13 +188,6 @@ nav {
 }
 
 .big-text {
-  position: relative;
-  font-family: Raleway, sans-serif;
-  text-transform: uppercase;
-  font-size: 159px;
-  font-weight: 800;
-  line-height: 163px;
-  color: #FAF1E6;
   height: 100%;
   padding-right: 0;
   margin: 0;
@@ -233,13 +195,19 @@ nav {
 }
 
 .big-text p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 159px;
+  font-weight: 800;
+  line-height: 163px;
+  color: #FAF1E6;
   margin: 0;
   padding: 0;
   line-height: 187px;
 }
 
 .big-text span {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   padding: 0;
   margin: 0;
   font-size: 43px;
@@ -251,7 +219,7 @@ nav {
 
 .big-text .main-office {
   margin-top: 60px;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -265,7 +233,7 @@ nav {
 
 .big-text .address {
   margin-top: 10px;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -291,7 +259,7 @@ nav {
 
 .email-address {
   margin-top: 85px;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -323,7 +291,7 @@ nav {
 
 .big-text-rotate {
   position: relative;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 120px;
   font-weight: 800;
@@ -344,7 +312,7 @@ nav {
 
 .stage p {
   padding-top: 18px;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: none;
   font-weight: normal;
   font-size: 24px;
@@ -362,7 +330,7 @@ nav {
 
 .stage-rotate p {
   padding-top: 18px;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: none;
   font-weight: normal;
   font-size: 20px;
@@ -410,7 +378,7 @@ nav {
 .stagewithback {
   background-color: #125A49;
   padding: 18px 108px;
-  font-family: Montserrat, serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -418,7 +386,7 @@ nav {
 }
 
 .zagolovok {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin-bottom: 17px;
   font-size: 43px;
   white-space: nowrap;
@@ -444,7 +412,7 @@ nav {
   padding-top: 25px;
   padding-bottom: 25px;
   list-style-type: none;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 32px;
@@ -453,7 +421,7 @@ nav {
 }
 
 .menu-2 ul li span {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -469,7 +437,7 @@ nav {
   margin-top: 51px;
   padding-left: 10%;
   padding-right: 10%;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 43px;
   font-weight: 200;
   line-height: 52px;
@@ -481,7 +449,7 @@ nav {
 
 .foot {
   padding-top: 20px;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -523,11 +491,21 @@ nav {
 
 .footer_button .btn {
   width: 264px;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
   font-size: 22px;
   padding: 20px 30px;
   background-color: #fff;
   color: #000;
+  border: 0px;
+}
+
+.footer_button .btn:hover, .footer_button .btn:focus {
+  background-color: #f1ebeb;
+}
+
+.footer_button .btn:active {
+  background-color: #f1ebeb;
 }
 
 .text-center {
@@ -557,7 +535,7 @@ nav {
 }
 
 .makeOrder {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: none;
   margin-top: 204px;
   font-style: normal;
@@ -604,6 +582,7 @@ nav {
   background: #FAF1E6;
   width: 100%;
   height: 176px;
+  padding: 10px 10px;
 }
 
 .makeOrder span {
@@ -618,7 +597,7 @@ nav {
 }
 
 .portfolio_title .title {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 159px;
   font-weight: 800;
   text-transform: uppercase;
@@ -627,21 +606,143 @@ nav {
   position: absolute;
   top: 175px;
   right: -550px;
-  background-color: #000;
+  background-color: #0e0e0d;
 }
 
 .portfoliopoloska {
-  margin-top: 120px;
+  margin-top: 46px;
   width: 100%;
   height: 65px;
 }
 
-/* Wide screen */
-@media only screen and (max-width: 1644px) {
-  /**/
+.preloader {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #000;
 }
 
-@media only screen and (max-width: 1309px) {
+.preloader .pulse {
+  position: relative;
+  left: 50%;
+  top: 50vh;
+  margin-left: -40px;
+  margin-top: -40px;
+}
+
+.preloader .pulse::before, .preloader .pulse::after {
+  content: '';
+  border: 5px solid #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 500px;
+  position: absolute;
+}
+
+.preloader .pulse::before {
+  -webkit-animation: pulse-outer .8s case-in infinite;
+          animation: pulse-outer .8s case-in infinite;
+}
+
+.preloader .pulse::after {
+  -webkit-animation: pulse-inner .8s linear infinite;
+          animation: pulse-inner .8s linear infinite;
+}
+
+@-webkit-keyframes pulse-outer {
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  50% {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+@keyframes pulse-outer {
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  50% {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+
+@-webkit-keyframes pulse-inner {
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse-inner {
+  0% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.examplePortfolioNechetn, .examplePortfolioChetn {
+  background-color: #FAF1E6;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 45px;
+  color: #0E0E0D;
+}
+
+.examplePortfolioNechetn img, .examplePortfolioChetn img {
+  width: 524px;
+  height: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.examplePortfolioChetn {
+  background-color: #0e0e0d;
+  color: #FAF1E6;
+}
+
+.examplePortfolioChetn img {
+  width: 547px;
+  height: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Wide screen */
+@media only screen and (max-width: 1200px) {
   .logo {
     font-size: 16px;
   }
@@ -649,11 +750,11 @@ nav {
     top: 400px;
     right: 50px;
   }
-}
-
-@media only screen and (max-width: 1200px) {
   .animationemail {
     display: none;
+  }
+  .menu ul li a {
+    font-size: 25px;
   }
 }
 
@@ -662,15 +763,28 @@ nav {
   .email-address {
     font-size: 25px;
   }
+  .poloska .kartinka {
+    display: none;
+  }
+  .menu ul li a {
+    font-size: 20px;
+  }
+  .big-text p {
+    font-size: 120px;
+    line-height: 120px;
+  }
 }
 
 /* Small devises, Tablets */
 @media only screen and (max-width: 768px) {
-  /* */
+  .big-text p {
+    font-size: 5px;
+    text-transform: lowercase;
+  }
 }
 
 /* Phones*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 576px) {
   .social {
     margin-top: 50px;
   }
