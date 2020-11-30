@@ -180,6 +180,8 @@ body {
 }
 
 .poloska2-menu {
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 84px;
 }
@@ -276,9 +278,9 @@ body {
   margin-top: 238px;
 }
 
-.social a {
+.social a img {
   margin-right: 85px;
-  padding-top: 10px;
+  margin-top: 40px;
 }
 
 .animationemail {
@@ -466,6 +468,7 @@ body {
   bottom: 0;
   background-color: #710000;
   text-align: center;
+  white-space: nowrap;
 }
 
 .foot .logo {
@@ -615,9 +618,11 @@ body {
 }
 
 .portfoliopoloska {
+  background-position: center;
+  background-size: cover;
   margin-top: 46px;
   width: 100%;
-  height: 65px;
+  height: 70px;
 }
 
 .preloader {
@@ -795,6 +800,44 @@ body {
   }
   .zagolovok {
     font-size: 25px;
+  }
+  .poloska-pokolenia {
+    margin-top: 50px;
+  }
+  .social {
+    margin-top: 50px;
+  }
+  .big-text {
+    margin-top: 50px;
+  }
+  .foot {
+    font-size: 20px;
+  }
+  .footer_button {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 15px;
+  }
+  .footer_button .btn {
+    width: 264px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #000;
+    border: 0px;
+  }
+  .footer_button .btn:hover, .footer_button .btn:focus {
+    background-color: #f1ebeb;
+  }
+  .footer_button .btn:active {
+    background-color: #f1ebeb;
   }
 }
 
