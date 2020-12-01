@@ -106,10 +106,9 @@ body {
 
 .label {
   position: relative;
-  background-position: center;
+  background-position: left;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 1064px;
   height: 917px;
 }
 
@@ -121,8 +120,8 @@ body {
   color: #f0f0e0;
   line-height: 171px;
   position: absolute;
-  top: 185px;
-  left: 258px;
+  top: 148px;
+  left: 220px;
   background-color: #0e0e0d;
 }
 
@@ -486,6 +485,11 @@ body {
   margin-top: 35px;
 }
 
+.studio {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .footer_button {
   position: relative;
   display: -webkit-box;
@@ -839,6 +843,12 @@ body {
   .footer_button .btn:active {
     background-color: #f1ebeb;
   }
+  .main-menu a {
+    padding: 10px 10px;
+  }
+  .rotate {
+    display: none;
+  }
 }
 
 /* Meduim devices, desktop */
@@ -860,10 +870,6 @@ body {
 
 /* Small devises, Tablets */
 @media only screen and (max-width: 768px) {
-  .big-text p {
-    font-size: 5px;
-    text-transform: lowercase;
-  }
   .firstPart .menu {
     margin-top: 0px;
   }
@@ -884,16 +890,45 @@ body {
 
 /* Phones*/
 @media only screen and (max-width: 576px) {
+  .label {
+    background-position: 0 0;
+    height: 450px;
+  }
+  .label .title {
+    font-size: 92px;
+    line-height: 92px;
+    top: 40px;
+    left: 15px;
+    background-image: none;
+  }
+  .big-text p {
+    font-size: 82.4px;
+    line-height: 84px;
+  }
   .social {
     margin-top: 50px;
   }
   .firstPart .menu ul li a {
     font-size: 16px;
   }
+  .main-menu a {
+    font-size: 18px;
+  }
+  .examplePortfolioNechetn, .examplePortfolioChetn {
+    font-size: 19px;
+    line-height: 30px;
+  }
+  .other_offers {
+    font-size: 33px;
+    line-height: 40px;
+  }
 }
 
 /* Small phones */
 @media only screen and (max-width: 320px) {
+  .main-menu a {
+    font-size: 18px;
+  }
   .aboutUs {
     text-align: center;
   }
